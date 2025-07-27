@@ -26,7 +26,7 @@ export const Navbar = () => {
           onClick={() => navigate("/")}
           className="text-slate-50 text-5xl hover:cursor-pointer"
         >
-          ShopEase
+          PurchEase
         </h1>
       </div>
 
