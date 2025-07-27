@@ -1,8 +1,11 @@
  // utils/getproductsbycategories.js
 export const getproductsbycategories = (products, category) => {
-  return category.toLowerCase() === 'all'
+  const selectedCategory = category.toLowerCase();
+
+  return selectedCategory === 'all'
     ? products
     : products.filter(
-        (p) => p.category.name.toLowerCase() === category.toLowerCase()
+        (p) => p.category?.name?.toLowerCase() === selectedCategory
       );
 };
+
